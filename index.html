@@ -2,8 +2,27 @@
 <html>
 	<head>
 		<title>Hello World</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
 	</head>
 	<body>
-		<h1>Hello, World! <h1>
-	<body>
-<html>
+		<h1>Hello, World! </h1>
+		<h2>Para iniciar con tu prueba de seguridad da click en el siguiente botón</h2>
+		<button onclick="mostrarImagen()">Para inciar a click aquí</button>
+    	<br>
+    	<img id="imagen" style="display: none;">
+    
+    	<script>
+        function mostrarImagen() {
+            var imagen = document.getElementById("imagen");
+            imagen.src = "https://okdiario.com/img/2021/11/13/syed-ahmad-yxtr6xejdv8-unsplash1-635x358.jpg";
+            imagen.style.display = "block";
+        }
+    	</script>
+		<h3> Para iniciar con tu prueba de seguriad, debemos saber que tipo de antivirus has tenido en tu dispositivo</h3>
+		<form>
+			<label for="texto">Ingrese aquí si ha tenido o no algún tipo de antivirus:</label>
+			<input type="text" id="texto" name="texto">
+			<button type="submit">Enviar</button>
+		</form>
+	</body>
+</html>
